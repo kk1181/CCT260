@@ -55,7 +55,3 @@ How to Run
 Credits
 	•	Story & Concept: Group Project – Xiaoxi, Yimeng Zhang, Abigail Han
 	•	Design & Coding: Each member contributed to specific scenes as detailed above
-
-如果你想，我可以再帮你写一个更短、GitHub 首页风格的精简版，让访客一眼就能了解剧情和操作方法。
-
-你希望我做这个吗？
