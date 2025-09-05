@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Exhibition Room</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1 id="title">The Exhibition</h1>
+
+<button id="clue1" onclick="openModal('modal1')">Investigate</button>
+
+
+<div id="modal1" class="modal">
+    <div id="modalContent">
+        <h3>Clue 1</h3>
+        <img src="img/cologne.jpg" width="100">
+        <p>A faint scent of men's cologne lingers around the display, a fragrance that normally wouldn't be present in the exhibition room.<br> This scent matches the butler's cologne, showing that he had recently entered the room and stayed for some time.</p>
+    </div>
+</div>
+
+<button id="clue2" onclick="openModal('modal2')">Investigate</button>
+
+
+<div id="modal2" class="modal">
+    <div id="modalContent">
+        <h3>Clue 2</h3>
+        <img src="img/hair.jpg" width="100">
+        <p>A single light brown hair rests quietly on the floor.<br>This hair matches the maid's hair color.The maid is usually responsible for cleaning and organizing, but the exhibition room is personally overseen by the master, meaning she had no reason to leave traces here.</p>
+        <button id="nextButton" onclick="changeScene()">Next Scene</button>
+    </div>
+</div>
+
+<script src="javascript/script.js"></script>
+
+</body>
+</html>
+

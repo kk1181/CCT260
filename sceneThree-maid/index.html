@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Scene 3</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div id="contentBox">
+	<p id="title">Maid's Room</p>
+
+	<p id="bodyTxt">The maid's room is modestly furnished, with a neatly made bed and a carefully folded blanket. A few sewing threads and fabric scraps rest on the table, while a recently used shopping basket sits in the corner, still carrying the faint scent of fresh vegetables.</p>
+	</div>
+
+	<button id="clue1" onclick="openModal(event)">Investigate</button>
+
+
+	<div id="modal">
+		<div id="modalContent">
+			<h3>Clue 2</h3>
+			<p>At the bottom of the shopping basket lies a letter, its edges slightly creased, suggesting it was placed there in a hurry.<br><br>The letter reveals that the master has been contacting an antique dealer, planning to sell the ruby to settle his debts.<br><br>Since the maid frequently goes out to buy groceries, the master may have used her to deliver the letter discreetly.</p>
+			<button id="nextButton" onclick="changeScene()">Conduct Interrogation</button>
+			
+		</div>
+
+	</div>
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

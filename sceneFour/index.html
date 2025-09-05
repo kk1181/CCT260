@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interrogation Room</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <p id="title">Who is being interrogated now?</p>
+
+    <div class="container">
+        <!-- Butler  -->
+        <div>
+            <div id="butler-frame" class="frame" onclick="revealDescription(1)">
+                <img src="img/butler.jpg">
+            </div>
+            <div id="butler-description" class="description-box">
+                <p>The butler admits he had long been aware of the master's financial troubles and had been secretly investigating.</p>
+                <p>Since he uses the same cologne daily, the scent at the crime scene was simply a remnant from his previous visits, not proof of guilt.</p>
+                <p>The debt note found in his desk confirms his knowledge of the master's crisis, but he had not disclosed it to anyone; instead, he was gathering evidence to prevent further trouble.</p>
+                <p>This proves that the butler is not the culprit. He was trying to protect the estate's assets.</p>
+            </div>
+        </div>
+
+        <!-- Maid  -->
+        <div>
+            <div id="maid-frame" class="frame" onclick="revealDescription(2)">
+                <img src="img/maid.jpg">
+            </div>
+            <div id="maid-description" class="description-box">
+                <p>The maid admits that the master instructed her to deliver a letter to an antique dealer during her grocery trip.</p>
+                <p>The letter contained details about the plan to sell the ruby, as the master sought to pay off his massive debts.</p>
+                <p>The maid obeyed out of fear but was unaware of the letter's true contents until the cat detective discovered it in her basket.</p>
+                <p>This confirms that the maid was not a willing accomplice. She was merely used by the master.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next Scene Button -->
+    <button id="nextButton" onclick="window.location.href='../sceneFive/index.html'">Next Scene</button>
+
+    <script>
+        let butlerRevealed = false;
+        let maidRevealed = false;
+
+        function revealDescription(person) {
+            if (person === 1) {
+                document.getElementById('butler-description').style.display = 'block';
+                butlerRevealed = true;
+            } else if (person === 2) {
+                document.getElementById('maid-description').style.display = 'block';
+                maidRevealed = true;
+            }
+            checkNextScene();
+        }
+
+        function checkNextScene() {
+            if (butlerRevealed && maidRevealed) {
+                document.getElementById('nextButton').style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>

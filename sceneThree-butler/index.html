@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Scene 3 - Butler's Room</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="contentBox">
+	<p id="title">Butler's Room</h1>
+
+	<p id="bodyTxt">The butler's room is meticulously organized, with several thick books neatly arranged on the shelf and a spotless desk. The air carries a faint trace of his usual cologne, mingling with the subtle scent of aged paper. The window is slightly ajar, and the night breeze gently rustles the curtains, adding to the quiet ambiance.</p>
+	</div>
+
+	<button id="clue1" onclick="openModal(event)">Investigate</button>
+
+
+	<div id="modal">
+		<div id="modalContent">
+			<h3>Clue 1</h3>
+			<p>The desk drawer is slightly ajar, revealing neatly stacked documents and account books, with a folded letter buried at the bottom.<br><br>Unfolding the letter reveals a debt note signed by the master, with a massive sum owed and a date just before the ruby was stolen.</p>
+
+			<button id="nextButton" onclick="changeScene()">Conduct Interrogation</button>
+			
+		</div>
+
+	</div>
+
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

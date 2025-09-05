@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../img/ex.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#title {
+    position: absolute;
+    top: 8%;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 100px;
+    color: #7e8d70;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-bottom: 0;
+    animation: fadeIn 1s ease-out;
+    z-index: 10; 
+}
+
+#clue1 {
+    position: absolute;
+    display: inline-block;
+    background-color: #7e8d70;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+    text-align: center;
+    width: 200px;
+    margin: 30px auto;
+    top: 80%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+#clue1:hover {
+    background-color: #576386;
+}
+
+#clue2 {
+    position: absolute;
+    display: inline-block;
+    background-color: #7e8d70;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+    text-align: center;
+    width: 200px;
+    margin: 30px auto;
+    bottom: 10%;
+    right: 10%;
+}
+
+#clue2:hover {
+    background-color: #576386;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    background-color: #f3e3b2;
+    border-radius: 10px;
+    border: 5px solid #7e8d70;
+    align-items: center;
+    justify-content: center;
+    top: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: auto; 
+    padding: 15px;
+    z-index: 9; 
+}
+
+
+#modalContent {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modalContent h3 {
+    margin-top: 0;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: #b45048;
+    z-index: 10;
+}
+
+#modalContent p {
+    margin-top: 0;
+    font-family: 'Georgia', serif;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+#nextButton {
+    background-color: #7e8d70;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Georgia', serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+    display: block;
+    text-align: center;
+    width: 200px;
+}
+
+#nextButton:hover {
+    background-color: #576386;
+}
